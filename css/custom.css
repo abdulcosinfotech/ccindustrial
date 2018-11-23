@@ -1,0 +1,117 @@
+/*-----------------------------------Fonts-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600,700');
+:root{
+	--primary: #01458e;
+}
+/*-----------------------------------Fonts-----------------------------------*/
+/*-------------------------------Common Style--------------------------------*/
+body{
+	background: #ffffff;
+	font-family: 'Lato', sans-serif;
+	overflow-y: scroll;
+	/*font-family: 'Spicy Rice', cursive;*/
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+
+.header{
+	background-color: rgba(0,0,0,0.8) !important;
+	min-height: 80px;
+}
+.header .navbar-brand{
+	width: 180px;
+}
+.header .navbar-nav .nav-item .nav-link{
+	font-size: 14px;
+	padding: 5px 20px !important;
+	color: #ffffff;
+	position: relative;
+}
+.banner{
+	background: url(../img/banner.jpg) no-repeat center center /  cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner .banner-caption{
+	color: #ffffff;
+	padding: 15px;
+	background: rgba(1, 69, 142, 0.8);
+	position: relative;
+}
+
+.pro-card{}
+.pro-card .card-header{
+	background: transparent;
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.pro-card .card-text{
+	font-size: 14px;
+}
+
+.section-head{
+	font-size: 2.8rem;
+	font-weight: bold;
+	padding: 15px; 
+}
+.img-wrap{
+	height: 100%;
+}
+.img-wrap img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cont-wrap{
+	height: 100%;
+}
+
+.bg-primary{
+	background: var(--primary) !important;
+	color: #ffffff !important;
+}
+.btn-primary{
+	background: var(--primary) !important;
+	color: #ffffff !important;
+	border: var(--primary) !important;
+}
+.readmore-btn{
+	border-radius: 50px;
+    padding: 5px 20px;
+}
+.footer-main{
+	background: #181818;
+}
+.footer-copyright{
+	background: #1f1f1f;
+}
+.foot-logo{
+	width: 150px;
+}
+/*-------------------------------Media Queries-------------------------------*/
+@media screen and (min-width: 991px) {
+	.header .navbar-nav .nav-item.active .nav-link{
+		background: var(--primary);
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+
+	}
+	.header .navbar-nav .nav-item.active .nav-link:after{
+		content: '';
+		border-style: solid;
+		border-width: 20px 20px 0 20px;
+		border-color: var(--primary) transparent transparent transparent;
+		position: absolute;
+		bottom: -10px;
+	}
+}
+
+
+
